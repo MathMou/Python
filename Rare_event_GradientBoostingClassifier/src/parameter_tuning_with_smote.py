@@ -11,7 +11,7 @@ import time
 import copy
 from numpy import asarray
 
-os.environ['PYSPARK_PYTHON'] = "/opt/cloudera/Anaconda3/bin/python"
+os.environ['PYSPARK_PYTHON'] = ""
 
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import StandardScaler
