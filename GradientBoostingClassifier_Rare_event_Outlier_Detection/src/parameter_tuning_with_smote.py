@@ -129,7 +129,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 print("Date split completed..")
 
-#create similar list as below for dirrent parameters and test various combinations
+#create similar list as below for different parameters and test various combinations
 mf = [0.1, 0.25, 0.5, 0.75, 1.0]
 for max_features in mf:
     clf = GradientBoostingClassifier(random_state=RANDOM_STATE,
