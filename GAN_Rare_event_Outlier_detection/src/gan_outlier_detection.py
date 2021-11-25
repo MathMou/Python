@@ -49,7 +49,6 @@ from keras.models import Model, Sequential
 from keras.layers.core import Reshape, Dense, Dropout, Flatten
 from keras.layers.advanced_activations import LeakyReLU
 from keras.layers.convolutional import Conv2D, UpSampling2D
-from keras.datasets import mnist
 from keras.optimizers import Adam
 from keras import backend as K
 from keras import initializers
@@ -265,7 +264,7 @@ discriminator.save('models/model_name.h5', include_optimizer=False)
 discriminator_saved = load_model('models/model_name.h5', compile=False)
 discriminator_saved.summary()
 
-#main dataset
+#prediction dataset
 sql_input = """
 SELECT
     *
