@@ -1,5 +1,5 @@
 # GradientBoostingClassifier
-Template for setting up a rudimentary GradientBoostingClassifier able to detect outliers on with a high percentage
+Template for setting up a rudimentary GradientBoostingClassifier for imbalanced dataset able to detect outliers on with a high percentage
 
 # basic_parameter_tuning.py: 
 Used to finetune parameters in isolation for GradientBoostingClassifier.
