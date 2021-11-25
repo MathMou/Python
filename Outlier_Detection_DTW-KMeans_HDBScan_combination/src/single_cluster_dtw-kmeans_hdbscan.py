@@ -89,7 +89,7 @@ scaler = MinMaxScaler()
 
 df_r['feature1'] = le.fit_transform(df_r['feature1'].astype(str))
 df_r = pd.get_dummies(df_r, columns=['feature2'])
-df_r = df_r.drop(['feature3'], axis=1)
+df_r = df_r.drop(['time'], axis=1)
 
 df_r = pd.DataFrame(scaler.fit_transform(df_r),columns = df_r.columns)
 df_r = df_r.round(2) # for whole dataframe
