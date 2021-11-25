@@ -57,7 +57,7 @@ conn = connect(host=, port=, database=, timeout=100000,
                use_ssl=True, auth_mechanism='')
 
 cursor = conn.cursor()
-cursor.execute(base_data_tmp)
+cursor.execute(base_data_sql)
 df = as_pandas(cursor)
 
 print("df imported..")
